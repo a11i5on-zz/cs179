@@ -1,92 +1,147 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="CJ Patoilo">
-        <meta name="description" content="Milligram provides a minimal setup of styles for a fast and clean starting point. Specially designed for better performance and higher productivity with fewer properties to reset resulting in cleaner code.">
-        <title>Quick Careers - Your Profile</title>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
-        <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
-        <link rel="stylesheet" href="node_modules/milligram/dist/milligram.css"><!-- to generate this style run `$ npm start` -->
-        <link rel="stylesheet" href="node_modules/milligram/dist/main.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/main.css">
-    </head>
 
-    <body>
-        <nav class="navigation">
-            <section class="container"><a class="navigation-title" href="">
-                <h1 class="title" id="title">Quick Careers</h1>
-                <ul class="navigation-list float-right">
-                    <li class="navigation-item"><a class="navigation-link" href="index.html" data-popover="">My Profile</a></li>
-                    <li class="navigation-item"><a class="navigation-link" href="train.html" data-popover="">Train</a></li>
-                    <li class="navigation-item"><a class="navigation-link" href="work.html" data-popover="">Work</a></li>
-                    <li class="navigation-item"><a class="navigation-link" href="faq.html" data-popover="">FAQs</a></li>
-                    <li class="navigation-item"><a class="navigation-link" href="logout.html" data-popover="">Logout</a></li>
-                </ul>
-            </section>
-        </nav>
+  <head>
 
-        <section class="mainContainer">
-             <div class="row">
-                <div class="column column-10"></div>
-                <div class="column column-80">
-                    <h2>Welcome, Krzysztof!</h2>
-                    <h2>Shelter: Y2Y </h2> <!--This will be based off of the code received, as the codes that shelters hand out will be associated with that shelter and only that shelter-->
-                    <h2 style="display: inline;">Money made so far: $0</h2><button class="button button-outline" style="margin-left: 2rem;" onclick="alert('Awesome! Your shelter representative has received your payment and verification of job completion-- please see him/her to get it.')">Get paid</button>
-                </div>
-                <div class="column column-10"></div>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Quick Careers</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/landing-features.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Quick Careers</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Train</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Test</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Progress</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Settings</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Jumbotron Header -->
+      <header class="jumbotron my-4">
+        <h1 class="display-3">Welcome, Tallulah!</h1>
+        <div class="container">
+            <h2>Your Progress</h2>
+            <p>You have earned $1,000 this month, and you are 40% complete with your monthly income goal.  Great job!</p> 
+            <div class="progress">
+              <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                40% Complete
+              </div>
             </div>
+        </div>
+      </header>
 
-            <div class="row">
-                <div class="column column-10"></div>
-                <div class="column column-80">
-                    Your current rating:
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <br />
-                    Current skills tested for: None
-                    <br />
+      <!-- Page Features -->
+      <div class="row text-center">
 
-                    <h3>Jobs you'd be great for: </h3>
-                    Based off the skills you've already trained or tested for. Click <a href="train">here</a> to add more, or hover over the panels to learn more!
-                </div>
-                <div class="column column-10"></div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img class="card-img-top" src="img/study.png" alt="">
+            <div class="card-body">
+              <h4 class="card-title">Training Modules</h4>
+              <p class="card-text">Browse through classes to develop new skills and strengthen existing ones</p>
             </div>
-
-            <div class="row">
-
-                <div class="column column-10"></div>
-                <div class="column column-30">
-                    <div class="posting">
-                        <img src="img/essay1.jpg" class="jobImg" />
-                        <div class="jobTitle">Essay Proofreader </div>
-
-                    </div>
-                    
-                </div>
-                <div class="column column-30">
-                    <div class="posting">
-                    <img src="https://www.timeshighereducation.com/sites/default/files/styles/the_breaking_news_image_style/public/hands-being-raised-for-survey-illustration.jpg?itok=2WUWbkcj" class="jobImg"/>
-                    <div class="jobTitle">Survey Taker</div>
-                    </div>
-                    
-                </div>
-                <div class="column column-30">
-                    <div class="posting">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrRDbHqz1VkcZ6aoJ7ASuBqP1igPI4k_SPScUwvtrD_irDI_ep" class="jobImg"/>
-                    <div class="jobTitle"> ESL Tutor </div>
-                    </div>
-                    
-                </div>
-                <div class="column column-10"></div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Train!</a>
             </div>
+          </div>
+        </div>
 
-        </section>
-    </body>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img class="card-img-top" src="img/test.gif" alt="">
+            <div class="card-body">
+              <h4 class="card-title">Schedule Test</h4>
+              <p class="card-text">To gain certification for a skill, select a testing date and location.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Test!</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img class="card-img-top" src="img/work.jpg" alt="">
+            <div class="card-body">
+              <h4 class="card-title">Find Work</h4>
+              <p class="card-text">Search through a variety of job opportunities that leverage your skill set.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Work!</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img class="card-img-top" src="img/graph.png" alt="">
+            <div class="card-body">
+              <h4 class="card-title">Check Progress</h4>
+              <p class="card-text">View your earning, training, and testing history.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Check!</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Quick Careers 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
 
 </html>
