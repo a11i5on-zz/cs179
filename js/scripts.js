@@ -4,4 +4,6 @@ function save() {
 	for (i = 1; i < x.length-1 ;i++) {
         localStorage[labels[i-1]] = x.elements[i].value;
     }
+    localStorage["progress"] = 0;
+    localStorage["proofreadingBadge"] = false; 
 }

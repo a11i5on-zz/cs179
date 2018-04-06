@@ -1,0 +1,1 @@
+document.getElementById("nameWelcome").innerHTML = "Welcome, " + localStorage["name"] + "!";
