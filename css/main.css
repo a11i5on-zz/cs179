@@ -2,6 +2,12 @@
   padding-top: 7.5rem;
 }
 
+.secondaryContainer{
+
+  padding-top: 10.5rem;
+}
+
+
 #title {
   font-size: x-large;
 }
@@ -15,7 +21,13 @@
   height:28rem;
   border: 1px #e1e1d0 solid;
 }
+.titles{
 
+  text-align: center;
+
+}
+
+}
 .jobTitle {
   bottom: 0;
   font-size: xx-large;
@@ -33,6 +45,26 @@
 
 h2, h3 {
   margin: 0 auto;
+}
+#myBar {
+    width: 40%;
+    height: 30px;
+    background-color: #4B0082;
+    text-align: center; /* To center it horizontally (if you want) */
+    line-height: 30px; /* To center it vertically */
+    color: white;
+}
+
+#myProgress {
+    background-color: grey;
+    margin: auto;
+    width: 50%;
+    border: 3px ;
+}
+
+#my_centered_buttons {
+  display: flex;
+  justify-content: center;
 }
 
 /* Dropdown Button */
@@ -83,3 +115,9 @@ h2, h3 {
     top: 50%;
     left: 50%;
     }
+
+.badgeID {
+  width: 5%;
+  height: 5%;
+  text-align: center;
+}
