@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="CJ Patoilo">
         <meta name="description" content="Milligram provides a minimal setup of styles for a fast and clean starting point. Specially designed for better performance and higher productivity with fewer properties to reset resulting in cleaner code.">
-        <title>Quick Careers - Training Portal</title>
+        <title>Quick Careers - Career Quiz</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
         <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
         <link rel="stylesheet" href="node_modules/milligram/dist/milligram.css"><!-- to generate this style run `$ npm start` -->
@@ -15,73 +15,39 @@
     </head>
 
     <body>
-        <nav class="navigation">
-            <section class="container"><a class="navigation-title" href="">
-                <h1 class="title" id="title">Quick Careers</h1>
-                <ul class="navigation-list float-right">
-                    <li class="navigation-item"><a class="navigation-link" href="index.html" data-popover="">My Profile</a></li>
-                    <li class="navigation-item"><a class="navigation-link" href="train.html" data-popover="">Train</a></li>
-                    <li class="navigation-item"><a class="navigation-link" href="work.html" data-popover="">Work</a></li>
-                    <li class="navigation-item"><a class="navigation-link" href="faq.html" data-popover="">FAQs</a></li>
-                    <li class="navigation-item"><a class="navigation-link" href="logout.html" data-popover="">Logout</a></li>
-                </ul>
-            </section>
-        </nav>
+      <nav class="navigation">
+          <section class="container"><a class="navigation-title" href="">
+              <h1 class="title" id="title">Quick Careers</h1>
+              <ul class="navigation-list float-right">
+                  <li class="navigation-item"><a class="navigation-link" href="train.html" data-popover="">Train</a></li>
+                  <li class="navigation-item"><a class="navigation-link" href="work.html" data-popover="">Work</a></li>
+                <!-- create dropdown -->
+                <div class="dropdown">
+                  <li class="navigation-item" onclick="myFunction()"><a class="navigation-link drop_button" data-popover="">More Options</a></li>
+                  <!-- <button onclick="myFunction()" class="button button-clear drop_button">More Options</button> -->
+                  <div id="myDropdown" class="dropdown-content">
+                    <a href="schedule.html">Schedule Test</a>
+                    <a href="editprofile.html">Edit Profile</a>
+                  </div>
+                </div>
+              </ul>
+          </section>
+      </nav>
 
-        <section class="mainContainer">
-          <div><h1> Interest Quiz <h1></div>
-          <div> <h5> In order to choose a career that will give you personal satisfaction, you must spend some time thinking about what
-          really interests you. This activity helps you match your interests to different types of careers. For each item, click on which of the two activities you would rather do. It doesn’t matter if you like both of them a lot or dislike both of them a lot; just pick the one you would rather do. <h5> </div>
+    <section class="mainContainer row">
 
-              <form  name="matchinfo" >
+        <div class="column column-10"></div>
 
-                  <br> Analyze reports and records OR Operate a machine <br>
-                  <input type="radio" name="q1" value="C1" required="required"> Choice 1<br>
-                  <input type="radio" name="q1" value="C2" required="required"> Choice 2<br>
+        <div class="column column-80">
 
-                  <br>  Write a computer program OR Train animals <br>
-                  <input type="radio" name="q2" value="C1" required="required"> Choice 1<br>
-                  <input type="radio" name="q2" value="C2" required="required"> Choice 2<br>
+            <h2>Welcome.</h2>
 
-                  <br>  Solve a burglary OR Check products for quality<br>
-                  <input type="radio" name="q3" value="C1" required="required"> Choice 1<br>
-                  <input type="radio" name="q3" value="C2" required="required"> Choice 2<br>
+        </div>
 
-                  <br> Put together small tools OR Design a website <br>
-                  <input type="radio" name="q4" value="C1" required="required"> Choice 1<br>
-                  <input type="radio" name="q4" value="C2" required="required"> Choice 2<br>
+    </section>
 
-                  <br>  Plan estate disbursements/payments OR Enter data <br>
-                  <input type="radio" name="q5" value="C1" required="required"> Choice 1<br>
-                  <input type="radio" name="q5" value="C2" required="required"> Choice 2<br>
 
-                  <br> Learn about other ethnic groups OR Manage an information system <br>
-                  <input type="radio" name="q6" value="C1" required="required"> Choice 1<br>
-                  <input type="radio" name="q6" value="C2" required="required"> Choice 2<br>
 
-                  <br> Follow step-by-step instructions OR Collect past due bills <br>
-                  <input type="radio" name="q7" value="C1" required="required"> Choice 1<br>
-                  <input type="radio" name="q7" value="C2" required="required"> Choice 2<br>
-
-                  <br> Classify plants OR Transcribe medical records <br>
-                  <input type="radio" name="q8" value="C1" required="required"> Choice 1<br>
-                  <input type="radio" name="q8" value="C2" required="required"> Choice 2<br>
-
-                  <br>  Write for a newspaper OR Use a calculator <br>
-                  <input type="radio" name="q9" value="C1" required="required"> Choice 1<br>
-                  <input type="radio" name="q9" value="C2" required="required"> Choice 2<br>
-
-                  <br>6. Are you a US citizen? <br>
-                  <input type="radio" name="citizen" value="Yes" required="required"> Yes<br>
-                  <input type="radio" name="citizen" value="No" required="required"> No<br>
-
-                  <br>7. Are you eligible to be paid in the US? <br>
-                  <input type="radio" name="paid" value="Yes" required="required"> Yes<br>
-                  <input type="radio" name="paid" value="No" required="required"> No<br>
-
-                <a href="savedQuiz.html" type="submit" class="button button-outline" onclick="save()">Go to your Profile</a>
-              </form>
-        </section>
     </body>
 
 </html>
