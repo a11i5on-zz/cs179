@@ -12,7 +12,19 @@
         <link rel="stylesheet" href="node_modules/milligram/dist/main.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/main.css">
-        <script src="js/navbar.js"></script>
+
+        <script>
+        function myFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+
+        </script>
     </head>
 
     <body>
@@ -29,72 +41,58 @@
                   <div id="myDropdown" class="dropdown-content">
                     <a href="schedule.html">Schedule Test</a>
                     <a href="editprofile.html">Edit Profile</a>
-                    <a href="logout.html">Logout</a>
                   </div>
                 </div>
               </ul>
           </section>
       </nav>
 
-        <section class="mainContainer">
-             <div class="row">
-                <div class="column column-10"></div>
-                <div class="column column-80">
-                    <h2>Welcome, Krzysztof!</h2>
-                    <h2>Shelter: Y2Y </h2> <!--This will be based off of the code received, as the codes that shelters hand out will be associated with that shelter and only that shelter-->
-                    <h2 style="display: inline;">Money made so far: $0</h2><button class="button button-outline" style="margin-left: 2rem;" onclick="alert('Awesome! Your shelter representative has received your payment and verification of job completion-- please see him/her to get it.')">Get paid</button>
-                </div>
-                <div class="column column-10"></div>
-            </div>
+  </header>
 
-            <div class="row">
-                <div class="column column-10"></div>
-                <div class="column column-80">
-                    Your current rating:
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <br />
-                    Current skills tested for: None
-                    <br />
+  <section class="mainContainer">
+    <h1 class="titles" id="nameWelcome" > Welcome </h1>
+    <div class="container">
+        <h2 class="titles"> Your Progress</h2>
+        <p class="titles">You have earned $1,000 this month, and you are 40% complete with your monthly income goal.  Great job!</p>
+    <div id="myProgress">
+  <div id="myBar"> 40% </div>
+</div>
+<div class = "secondaryContainer">
+  <div id="myDIV">
+    <img src="https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Badges-and-Labels-PNG/Gold_Seal_Badge_PNG_Clip_Art_Image.png?m=1507172108" class="badgeID"/>
+    </div>
+</div>
+<div class="row">
 
-                    <h3>Jobs you'd be great for: </h3>
-                    Based off the skills you've already trained or tested for. Click <a href="train">here</a> to add more, or hover over the panels to learn more!
-                </div>
-                <div class="column column-10"></div>
-            </div>
+    <div class="column column-10"></div>
+    <div class="column column-30">
+        <div class="posting">
+        <img src="img/work.jpg" class="jobImg"/>
+        <div id="my_centered_buttons" class="jobTitle"> Find Work </div>
+        <a id="my_centered_buttons" href="work.html" class="button button-outline"> Work!</a>
+        </div>
 
-            <div class="row">
+    </div>
+    <div class="column column-30">
+        <div class="posting">
+        <img src="img/test.gif" class="jobImg"/>
+        <div id="my_centered_buttons" class="jobTitle"> Schedule Test </div>
+        <a id="my_centered_buttons" href="schedule.html" class="button button-outline"> Test!</a>
+        </div>
 
-                <div class="column column-10"></div>
-                <div class="column column-30">
-                    <div class="posting">
-                        <img src="img/essay1.jpg" class="jobImg" />
-                        <div class="jobTitle">Essay Proofreader </div>
+    </div>
+    <div class="column column-30">
+        <div class="posting">
+        <img src="img/study.png" class="jobImg"/>
+        <div id="my_centered_buttons" class="jobTitle">Training Modules </div>
+        <a id="my_centered_buttons" href="train.html" class="button button-outline"> Train!</a>
+        </div>
 
-                    </div>
-
-                </div>
-                <div class="column column-30">
-                    <div class="posting">
-                    <img src="https://www.timeshighereducation.com/sites/default/files/styles/the_breaking_news_image_style/public/hands-being-raised-for-survey-illustration.jpg?itok=2WUWbkcj" class="jobImg"/>
-                    <div class="jobTitle">Survey Taker</div>
-                    </div>
-
-                </div>
-                <div class="column column-30">
-                    <div class="posting">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrRDbHqz1VkcZ6aoJ7ASuBqP1igPI4k_SPScUwvtrD_irDI_ep" class="jobImg"/>
-                    <div class="jobTitle"> ESL Tutor </div>
-                    </div>
-
-                </div>
-                <div class="column column-10"></div>
-            </div>
-
+    </div>
+    <div class="column column-10"></div>
+</div>
         </section>
+        <button onclick="myFunction()">Badge</button>
     </body>
 
 </html>
