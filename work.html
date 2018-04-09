@@ -48,7 +48,16 @@
                 </div>
                 <div class="column column-10"></div>
             </div>
-
+            <script/>
+                function work_eligible() {
+                    var x = document.getElementById("proofreading job");
+                    if (proofreadingBadge === true) {
+                        x.style.display = "block";
+                    } else {
+                        x.style.display = "none";
+                    }
+                }
+            </script>
             <div class="row">
 
                 <div class="column column-10">
@@ -66,14 +75,16 @@
                           </tr>
                         </thead>
                         <tbody>
-                          <tr>
-                            <td>Proofread Cover Letter</td>
-                            <td>0.5</td>
-                            <td>Completely remote</td>
-                            <td>07/12/2018</td>
-                            <td>8</td>
-                          </tr>
-                          <tr>
+                          <div id="proofreading job">
+                              <tr>
+                                  <td><a href="job.html">Proofread Cover Letter</a></td>
+                                <td>0.5</td>
+                                <td>Completely remote</td>
+                                <td>07/12/2018</td>
+                                <td>8</td>
+                              </tr>
+                          </div>
+<!--                          <tr>
                             <td>ESL Tutor</td>
                             <td>10</td>
                             <td>Call required</td>
@@ -86,7 +97,7 @@
                             <td>Completely remote</td>
                             <td>03/20/2018</td>
                             <td>5</td>
-                          </tr>
+                          </tr>-->
                         </tbody>
                     </table>
                 <div class="column column-10">
