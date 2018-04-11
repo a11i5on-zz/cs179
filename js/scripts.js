@@ -18,8 +18,7 @@ function careerSave() {
 
 // After completing a job in Work, progress updates dynamically based on the type of job
 function paperReviewWork() {
-	var paperReview = "8";
-  	localStorage.setItem("progress", paperReview);
+  	localStorage["progress"] = parseInt(localStorage["progress"]) + 8;
 
 }
 function eslWork() {
