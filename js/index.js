@@ -5,7 +5,7 @@ document.getElementById("myBar").innerHTML = percent + "%";
 document.getElementById("statement").innerHTML = "You have earned $" + localStorage['progress'] + " this month so far. Great job!";
 
 var x = document.getElementById("badgeID");
-if (localStorage["proofreadingBadge"]) {
+if (localStorage["proofreadingBadge"] == 'true') {
     x.style.display = "block";
     console.log("TRUE");
 } else {

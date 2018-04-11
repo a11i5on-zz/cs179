@@ -1,9 +1,11 @@
 function work_eligible() {
-    var x = document.getElementById("proofreading job");
-    if (localStorage["proofreadingBadge"] === true) {
+    var x = document.getElementById("ptitle");
+    if (localStorage["proofreadingBadge"] == 'true') {
         x.href = "job.html";
     }
-    console.log(localStorage["proofreadingBadge"]);
+    else {
+    	alert("You are not yet eligible for this job. Please test to certify for English proofreading first.");
+    }
 }
 
 work_eligible();
