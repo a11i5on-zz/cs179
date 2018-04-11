@@ -17,14 +17,14 @@
 
     <body>
       <nav class="navigation">
-        <section class="container"><a class="navigation-title" href="">
-            <h1 class="title" id="title">Quick Careers</h1>
+        <section class="container"><a class="navigation-title" href="index.html">
+            <h1 class="title" id="title" >Quick Careers</h1>
             <ul class="navigation-list float-right">
                 <li class="navigation-item"><a class="navigation-link" href="train.html" data-popover="">Train</a></li>
                 <li class="navigation-item"><a class="navigation-link" href="work.html" data-popover="">Work</a></li>
               <!-- create dropdown -->
               <div class="dropdown">
-                <li class="navigation-item" onclick="myFunction()"><a class="navigation-link drop_button" data-popover="">More Options</a></li>
+                <li class="navigation-item" onclick="navBar()"><a class="navigation-link drop_button" data-popover="">More Options</a></li>
                 <div id="myDropdown" class="dropdown-content">
                   <a href="schedule.html">Schedule Test</a>
                   <a href="editpage1.html">Edit Profile</a>
@@ -37,7 +37,12 @@
         <section class="mainContainer">
              <div class="row">
                 <div class="column column-10"></div>
-                <div class="column column-80"><h2>Training Test: English Proofreading</h2></div>
+                <div class="column column-80"><h2>Training Test: English Proofreading</h2>
+                  <h5> When you are finished with the quiz click "save progress" below</h5>
+                <div>
+                <a href="index.html" type="submit" class="button button-outline" onclick="Proofread()" id="pr">Save Progress</a>
+                </div>
+              </div>
                 <div class="column column-10"></div>
             </div>
 
@@ -56,9 +61,10 @@
 
                 </div>
                 <div class="column column-10"></div>
+
             </div>
 
         </section>
     </body>
-
+      <script src="js/scripts.js"></script>
 </html>
