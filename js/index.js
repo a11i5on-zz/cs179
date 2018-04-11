@@ -4,20 +4,11 @@ document.getElementById("myBar").style.width = percent + "%";
 document.getElementById("myBar").innerHTML = percent + "%"; 
 document.getElementById("statement").innerHTML = "You have earned $" + localStorage['progress'] + " this month so far. Great job!";
 
-var x = document.getElementById("badge_proof");
-if (localStorage["proofreadingBadge"] === true) {
+var x = document.getElementById("badgeID");
+if (localStorage["proofreadingBadge"]) {
     x.style.display = "block";
     console.log("TRUE");
 } else {
     x.style.display = "none";
     console.log("FALSE");
-}
-
-function myFunction() {
-    var x = document.getElementById("badgeID");
-    if (proofreadingBadge === true) {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
 }
