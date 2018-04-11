@@ -12,12 +12,13 @@ function save() {
 function careerSave() {
 
 	var goals = document.getElementById("goal");
+	localStorage.setItem("progress", '0');
 	localStorage.setItem("goal", goals.value);
 }
 
 // After completing a job in Work, progress updates dynamically based on the type of job
 function paperReviewWork() {
-	var paperReview += "8";
+	var paperReview = "8";
   	localStorage.setItem("progress", paperReview);
 
 }
