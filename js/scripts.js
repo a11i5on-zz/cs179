@@ -11,25 +11,25 @@ function save() {
 	// Gathered money goals in the quiz
 function careerSave() {
 
-	var goals = document.getElementById("goal")
+	var goals = document.getElementById("goal");
 	localStorage.setItem("goal", goals.value);
 }
 
 // After completing a job in Work, progress updates dynamically based on the type of job
 function paperReviewWork() {
-	var paperReview = "8"
-  localStorage.setItem("progress", paperReview);
+	var paperReview += "8";
+  	localStorage.setItem("progress", paperReview);
 
 }
 function eslWork() {
-	var esl = "10"
-  localStorage.setItem("progress", esl);
+	var esl = "10";
+  	localStorage.setItem("progress", esl);
 
 }
 
 //Save progress of tests taken to certify badges
 function Proofread() {
-	var badgeDescription = "Mastered: English Proofreading"
-  localStorage.setItem("badge1", badgeDescription);
+	var badgeDescription = "Mastered: English Proofreading";
+  	localStorage.setItem("badge1", badgeDescription);
 
 }

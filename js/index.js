@@ -1,3 +1,5 @@
 document.getElementById("nameWelcome").innerHTML = "Welcome, " + localStorage["name"] + "!";
-document.getElementById("myBar").style.width = "parseInt(100*parseInt(localStorage['progress']) / parseInt(localStorage['goal']))" + "%"; 
-document.getElementById("badgeDes").innerHTML = localStorage["badge1"] ;
+var percent = parseInt(100*parseInt(localStorage['progress']) / parseInt(localStorage['goal']));
+document.getElementById("myBar").style.width = percent + "%"; 
+document.getElementById("myBar").innerHTML = percent + "%"; 
+document.getElementById("statement").innerHTML = "You have earned $" + localStorage['progress'] + " this month so far. Great job!";
