@@ -12,3 +12,12 @@ if (localStorage["proofreadingBadge"] === true) {
     x.style.display = "none";
     console.log("FALSE");
 }
+
+function myFunction() {
+    var x = document.getElementById("badgeID");
+    if (proofreadingBadge === true) {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}

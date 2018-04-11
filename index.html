@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="CJ Patoilo">
-        <meta name="description" content="Milligram provides a minimal setup of styles for a fast and clean starting point. Specially designed for better performance and higher productivity with fewer properties to reset resulting in cleaner code.">
+        <meta name="author" content="Candid Cavaliers">
+        <meta name="description" content="QuickCareers">
         <title>Quick Careers - Your Profile</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
         <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
@@ -16,14 +16,7 @@
         <script src="js/popup.js"></script>
 
         <script>
-        function myFunction() {
-            var x = document.getElementById("badgeID");
-            if (proofreadingBadge === true) {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }
-        }
+        
         </script>
     </head>
 
@@ -50,57 +43,58 @@
   </header>
 
   <section class="mainContainer">
-    <div class="column column-10"></div>
-    <div class="column column-80">
-      
-            <h1 class="titles" id="nameWelcome" > Welcome </h1>
-            <div class="container">
-                <h2 class="titles"> Your Progress</h2>
-                <p class="titles" id="statement"></p>
-            <div id="myProgress">
-          <div id="myBar"></div>
-        </div>
-        <div class = "secondaryContainer">
-          <div id="myDIV">
-            <img src="https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Badges-and-Labels-PNG/Gold_Seal_Badge_PNG_Clip_Art_Image.png?m=1507172108" class="badgeID" id="badgeID"/>
+    <div class="row">
+      <div class="column column-10"></div>
+      <div class="column column-80">
+        
+              <h1 class="titles" id="nameWelcome" > Welcome </h1>
+              <div class="container">
+                  <h2 class="titles"> Your Progress</h2>
+                  <p class="titles" id="statement"></p>
+              <div id="myProgress">
+            <div id="myBar"></div>
+          </div>
+            <div id="myDIV">
+              <img src="https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Badges-and-Labels-PNG/Gold_Seal_Badge_PNG_Clip_Art_Image.png?m=1507172108" class="badgeID" id="badgeID"/>
             </div>
-        </div>
-        <div class="row">
+          <div class="row">
 
-           <div class="popup button button-outline" onclick="getPaid()">Get Paid
-                <span class="popuptext" id="myPopup">Payment has been initiated! Visit your approved shelter to recieve payment.</span>
-           </div>
-           
+             <div class="popup button button-outline" onclick="getPaid()" style="display:block; margin:auto; padding-bottom: 3%">Get Paid
+                  <span class="popuptext" id="myPopup">Payment has been initiated! Visit your approved shelter to recieve payment.</span>
+             </div>
+
+      </div>
+      <div class="column column-10"></div>
     </div>
-    <div class="column column-10"></div>
 
-    <div class="column column-10"></div>
-    <div class="column column-30">
-        <div class="posting">
-        <img src="img/work.jpg" class="jobImg"/>
-        <div id="my_centered_buttons" class="jobTitle"> Find Work </div>
-        <a id="my_centered_buttons" href="work.html" class="button button-outline"> Work!</a>
-        </div>
+    <div class="row">
+      <div class="column column-10"></div>
+      <div class="column column-30">
+          <div class="posting">
+          <img src="img/work.jpg" class="jobImg"/>
+          <div id="my_centered_buttons" class="jobTitle"> Find Work </div>
+          <a id="my_centered_buttons" href="work.html" class="button button-outline"> Work!</a>
+          </div>
 
-    </div>
-    <div class="column column-30">
-        <div class="posting">
-        <img src="img/test.gif" class="jobImg"/>
-        <div id="my_centered_buttons" class="jobTitle"> Schedule Test </div>
-        <a id="my_centered_buttons" href="schedule.html" class="button button-outline"> Test!</a>
-        </div>
+      </div>
+      <div class="column column-30">
+          <div class="posting">
+          <img src="img/test.gif" class="jobImg"/>
+          <div id="my_centered_buttons" class="jobTitle"> Schedule Test </div>
+          <a id="my_centered_buttons" href="schedule.html" class="button button-outline"> Test!</a>
+          </div>
 
-    </div>
-    <div class="column column-30">
-        <div class="posting">
-        <img src="img/study.png" class="jobImg"/>
-        <div id="my_centered_buttons" class="jobTitle">Training Modules </div>
-        <a id="my_centered_buttons" href="train.html" class="button button-outline"> Train!</a>
-        </div>
+      </div>
+      <div class="column column-30">
+          <div class="posting">
+          <img src="img/study.png" class="jobImg"/>
+          <div id="my_centered_buttons" class="jobTitle">Training Modules </div>
+          <a id="my_centered_buttons" href="train.html" class="button button-outline"> Train!</a>
+          </div>
 
-    </div>
-    <div class="column column-10"></div>
-</div>
+      </div>
+      <div class="column column-10"></div>
+  </div>
         </section>
     <script src="js/index.js"></script>
     </body>
