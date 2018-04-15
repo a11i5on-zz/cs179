@@ -43,23 +43,23 @@
             <h2>Welcome.</h2>
             <h3>Please sign up to begin finding new career opportunities.</h3>
 
-            <form id="signup">
+            <form id="signup" action="careerquiz.html">
                 <fieldset>
                     <label for="nameField">Name</label>
-                    <input type="text" placeholder="Krzysztof Gajos" id="nameField">
+                    <input type="text" placeholder="Krzysztof Gajos" id="nameField" required>
                     <label for="nameField">Password</label>
-                    <input type="text" placeholder="at least 6 characters" id="pwField">
+                    <input type="text" placeholder="at least 6 characters" id="pwField" required>
                     <label for="emailField">Email</label>
-                    <input type="text" placeholder="kgajos@cs179.org" id="emailField">
+                    <input type="text" placeholder="kgajos@cs179.org" id="emailField" required>
                     <label for="codeField">Shelter code</label>
-                    <input type="text" placeholder="The code you received from a participating shelter">
+                    <input type="text" placeholder="The code you received from a participating shelter" required>
                     <label for="commentField">Comment</label>
                     <textarea placeholder="Hello Krzysztof…" id="commentField"></textarea>
                     <div class="float-right">
                       <input type="checkbox" id="confirmField">
                       <label class="label-inline" for="confirmField">Send a copy to yourself</label>
                     </div>
-                    <a href="careerquiz.html" type="submit" class="button button-outline" onclick="save()">Sign up!</a>
+                    <input href="careerquiz.html" type="submit" class="button button-outline" onclick="save()">Sign up!</input>
                     <a href="login.html">Already signed up? Log in here.</a>
                 </fieldset>
             </form>
