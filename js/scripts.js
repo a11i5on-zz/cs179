@@ -21,9 +21,9 @@ function paperReviewWork() {
   	localStorage["progress"] = parseInt(localStorage["progress"]) + 8;
 
 }
-function eslWork() {
-	var esl = "10";
-  	localStorage.setItem("progress", esl);
+
+function surveyWork() {
+	localStorage["progress"] = parseInt(localStorage["progress"]) + 5;
 
 }
 
