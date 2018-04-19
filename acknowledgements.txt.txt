@@ -1,0 +1,3 @@
+CSS framework used: Milligram.io (as suggested by Namwook)
+Responsive navbar based on https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp
+
