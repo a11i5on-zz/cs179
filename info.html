@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Candid Cavaliers">
+        <meta name="description" content="QuickCareers">
+        <title>Quick Careers - Your Profile</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+        <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+        <link rel="stylesheet" href="node_modules/milligram/dist/milligram.css"><!-- to generate this style run `$ npm start` -->
+        <link rel="stylesheet" href="node_modules/milligram/dist/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/navbar.js"></script>
+        <script src="js/popup.js"></script>
+
+        <script>
+        
+        </script>
+    </head>
+
+    <body>
+      <nav class="navigation">
+          <section class="container"><a class="navigation-title" href="index.html">
+              <h1 class="title" id="title">Quick Careers</h1>
+              <ul class="navigation-list float-right">
+                <li class="navigation-item"><a class="navigation-link" href="info.html" data-popover="" target="_blank" style="font-size: xx-large;">&#9432;</a></li>
+                  <li class="navigation-item"><a class="navigation-link" href="train.html" data-popover="">Train</a></li>
+                  <li class="navigation-item"><a class="navigation-link" href="work.html" data-popover="">Work</a></li>
+                <!-- create dropdown -->
+                <div class="dropdown">
+                  <li class="navigation-item" onclick="navBar()"><a class="navigation-link drop_button" data-popover="">More Options</a></li>
+                  <div id="myDropdown" class="dropdown-content">
+                    <a href="schedule.html">Schedule Test</a>
+                    <a href="editpage1.html">Edit Profile</a>
+                  </div>
+                </div>
+              </ul>
+          </section>
+      </nav>
+
+  <section class="mainContainer">
+    <div class="row">
+      <div class="column column-10"></div>
+      <div class="column column-80">
+        <h2>Instruction Manual</h2>
+        <h3>Feel free to return to this page at any point by clicking the &#9432; icon at the top right of every page.</h3>
+        <ol>
+          <li>First, use our "Train" portal to improve your skills. There are both training materials and mock tests.</li>
+          <li>Upon completion of the training module or achieving proficiency in a particular skill, schedule a test (can be accessed through the "More Options" dropdown) at your registered shelter.</li>
+          <li>If you pass the certification test, the shelter will certify you electronically, and you will be able to work jobs listed on the "Work" pages that require your certified skill.</li>
+          <li>Complete as many jobs as needed; when you desire to be paid, navigate to the main page and click "Get Paid" to initiate a notification to the shelter, where you can pick up your payment in cash.</li>
+        </ol>
+      </div>
+      <div class="column column-10"></div>
+    </div>
+
+        </section>
+    <script src="js/index.js"></script>
+    </body>
+
+</html>
