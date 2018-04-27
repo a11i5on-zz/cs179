@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="node_modules/milligram/dist/main.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         <script src="js/navbar.js"></script>
         <script src="js/popup.js"></script>
 
@@ -21,24 +22,9 @@
     </head>
 
     <body>
-      <nav class="navigation">
-          <section class="container"><a class="navigation-title" href="index.html">
-              <h1 class="title" id="title">Quick Careers</h1>
-              <ul class="navigation-list float-right">
-                <li class="navigation-item"><a class="navigation-link" href="info.html" data-popover="" target="_blank" style="font-size: xx-large;">&#9432;</a></li>
-                  <li class="navigation-item"><a class="navigation-link" href="train.html" data-popover="">Train</a></li>
-                  <li class="navigation-item"><a class="navigation-link" href="work.html" data-popover="">Work</a></li>
-                <!-- create dropdown -->
-                <div class="dropdown">
-                  <li class="navigation-item" onclick="navBar()"><a class="navigation-link drop_button" data-popover="">More Options</a></li>
-                  <div id="myDropdown" class="dropdown-content">
-                    <a href="schedule.html">Schedule Test</a>
-                    <a href="editpage1.html">Edit Profile</a>
-                  </div>
-                </div>
-              </ul>
-          </section>
-      </nav>
+      <div id="n">
+
+      </div>
 
   <section class="mainContainer">
     <div class="row">
@@ -95,6 +81,12 @@
   </div>
         </section>
     <script src="js/index.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+    $('#n').load('navbar.html');
+    });
+    </script>
     </body>
 
 </html>
